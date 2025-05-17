@@ -1,52 +1,96 @@
-/* CSS Reset - Eric Meyer Reset v2.0 (simplified) */
+/* Import Google Font: Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Set display block for HTML5 elements */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+/* Apply smooth font rendering */
+html {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Set defaults for body */
+body {
+  min-height: 100vh;
+  background: #fff;
+  color: #333;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
 }
 
 /* Remove list styles */
-ol, ul {
-    list-style: none;
+ul, ol {
+  list-style: none;
 }
 
-/* Remove quotes for blockquotes and q */
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+/* Reset anchor tags */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
-/* Tables border collapse */
+/* Reset buttons */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-style: none;
+}
+
+/* Tables */
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: #222;
+}
+
+/* Inputs */
+input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #007BFF; /* or your primary color */
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
 body {
     font-family: sans-serif;
     line-height: 1.6;
