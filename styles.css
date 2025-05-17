@@ -11,7 +11,7 @@
     height: 150px;
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image is cropped correctly */
-    border: 3px solid #4caf50; /* Adds a border */
+    border: 3px solid #1816a6; /* Adds a border */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow */
 }
 body {
