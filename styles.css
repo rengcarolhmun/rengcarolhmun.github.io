@@ -36,12 +36,12 @@ nav a:hover {
     color: #333;
 }
 .container {
-    width: 80%;
+    width: 95%;
     padding: 20px 0;
     margin: 0 auto;
 }
 .main-content {
-    width: 70%;
+    width: 90%;
     padding: 0 5px;
     box-sizing: border-box;
     margin: 0 auto;
