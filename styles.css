@@ -20,7 +20,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #edeeff, #ffffff);
     color: #333;
 }
 header {
