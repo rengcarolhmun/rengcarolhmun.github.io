@@ -7,13 +7,11 @@ body {
     color: #333;
 }
 header {
-    background: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+    background: linear-gradient(to right, #000000, #333333);
     color: #fff;
     padding-top: 10px;
     min-height: 70px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px); /* blur background behind header */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
 }
 header h1 {
     text-align: center;
@@ -21,13 +19,11 @@ header h1 {
     padding-bottom: 10px;
 }
 nav {
-    background: rgba(0, 86, 179, 0.3); /* semi-transparent blue */
+    background: linear-gradient(to right, #0056b3, #1b8ff5);
     color: #fff;
     text-align: center;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* blur background behind nav */
-    -webkit-backdrop-filter: blur(10px);
 }
 nav a {
     color: #fff;
