@@ -1,3 +1,19 @@
+.profile-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image is cropped correctly */
+    border: 3px solid #4caf50; /* Adds a border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
