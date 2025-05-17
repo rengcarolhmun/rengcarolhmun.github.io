@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -14,6 +14,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 header h1 {
+    font-family: 'Lora', serif;
     text-align: center;
     margin: 0;
     padding-bottom: 10px;
@@ -26,6 +27,7 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 nav a {
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -54,6 +56,7 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 h2 {
+    font-family: 'Lora', serif;
     color: #0779e4;
     border-bottom: #e2e2e2 2px solid;
     padding-bottom: 5px;
@@ -73,6 +76,7 @@ footer {
     margin-bottom: 5px;
     padding-left: 20px;
     position: relative;
+    font-family: 'Roboto', sans-serif;
 }
 .certificate-list li:before {
     content: "\2022"; /* Bullet point */
