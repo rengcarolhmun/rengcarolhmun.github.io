@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>404 - Page Not Found</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1877F2; /* Facebook Blue */
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 5rem;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInDown 1s ease-in-out;
+  }
+  p {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    max-width: 400px;
+    line-height: 1.4;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  }
+  .joke-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .joke-text {
+    font-style: italic;
+    color: #d7e3fc;
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  .joke-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+  .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  a, button {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    color: #1877F2;
+    background: #fff;
+    text-decoration: none;
+    display: inline-block;
+  }
+  a:hover, button:hover {
+    background: #d4e3fb;
+  }
+  footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #cfd9f8;
+    text-shadow: none;
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 90%;
+    }
+    .joke-container {
+      flex-direction: column;
+      gap: 10px;
+      max-width: 90%;
+    }
+    .joke-text {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    a, button {
+      width: 100%;
+      padding: 12px 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>Oops! The page you're looking for can't be found.</p>
+  <div class="joke-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png" alt="Student illustration" class="joke-img" />
+    <p class="joke-text" id="joke-text"></p>
+  </div>
+  <div class="buttons">
+    <a href="https://rengcarolhmun.github.io/">Go Home</a>
+    <button onclick="window.history.back()">Go Back</button>
+  </div>
+  <footer>
+    &copy; 2025 Reng Carol Hmun. All rights reserved.
+  </footer>
+
+  <script>
+    const jokes = [
+      "Why did the student bring a ladder to class? Because the lessons were on a whole new level!",
+      "Why did the student sit near the window? Because they wanted to improve their 'outlook'!",
+      "Why was the math book sad? Because it had too many problems!",
+      "Why did the student eat their homework? Because the teacher said it was a piece of cake!"
+    ];
+    const jokeTextElem = document.getElementById('joke-text');
+    const randomIndex = Math.floor(Math.random() * jokes.length);
+    jokeTextElem.textContent = jokes[randomIndex];
+  </script>
+</body>
+</html>
