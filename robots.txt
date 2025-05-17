@@ -1,0 +1,7 @@
+# robots.txt
+
+# Allow all user agents (all search engine bots)
+User-agent: *
+
+# Allow access to all parts of the site
+Allow: /
