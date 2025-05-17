@@ -19,16 +19,20 @@ html {
   scroll-behavior: smooth;
   line-height: 1.5;
   color: #333;
-  background-color: #fff;
+  background-color: #f4f4f4;  /* Use the background color from your body */
 }
 
-/* Set defaults for body */
+/* Merged body styles (removed duplicate) */
 body {
   min-height: 100vh;
-  background: #fff;
+  background-color: #f4f4f4;
   color: #333;
   font-weight: 400;
+  font-family: 'Roboto', Arial, sans-serif; /* ensure font applies here */
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove list styles */
@@ -41,6 +45,7 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  transition: color 0.3s ease; /* smooth hover */
 }
 
 /* Reset buttons */
@@ -91,86 +96,94 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
-body {
-    font-family: sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+/* Header */
 header {
-    background: linear-gradient(to right, #000000, #333333);
-    color: #fff;
-    padding-top: 10px;
-    min-height: 70px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #000000, #333333);
+  color: #fff;  /* Ensure header text is light on dark bg */
+  padding-top: 10px;
+  min-height: 70px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
 header h1 {
-    text-align: center;
-    margin: 0;
-    padding-bottom: 10px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
 }
+
+/* Navigation */
 nav {
-    background: linear-gradient(to right, #0056b3, #1b8ff5);
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #0056b3, #1b8ff5);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 nav a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0 15px;
-    letter-spacing: 1px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 15px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
+
 nav a:hover {
-    color: #333;
+  color: #333;
 }
+
+/* Containers and sections left unchanged */
 .container {
-    width: 95%;
-    padding: 20px 0;
-    margin: 0 auto;
+  width: 95%;
+  padding: 20px 0;
+  margin: 0 auto;
 }
+
 .main-content {
-    width: 90%;
-    padding: 0 5px;
-    box-sizing: border-box;
-    margin: 0 auto;
+  width: 90%;
+  padding: 0 5px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
+
 section {
-    margin-bottom: 20px;
-    padding: 15px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
-    color: #0779e4;
-    border-bottom: #e2e2e2 2px solid;
-    padding-bottom: 5px;
+  color: #0779e4;
+  border-bottom: #e2e2e2 2px solid;
+  padding-bottom: 5px;
 }
+
 footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    color: #fff;
-    background: #333;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  background: #333;
 }
+
 .certificate-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
+
 .certificate-list li {
-    margin-bottom: 5px;
-    padding-left: 20px;
-    position: relative;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
 }
+
 .certificate-list li:before {
-    content: "\2022"; /* Bullet point */
-    color: #0779e4;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
+  content: "\2022"; /* Bullet point */
+  color: #0779e4;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
