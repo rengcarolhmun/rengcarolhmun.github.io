@@ -1,7 +1,10 @@
 .profile-container {
     text-align: center;
-    background: #fff;
-    padding: 20px;
+    background: transparent; /* Removes background */
+    display: flex; /* Optional: Centers the content */
+    justify-content: center; /* Optional: Horizontally centers */
+    align-items: center; /* Optional: Vertically centers */
+    padding: 10px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
