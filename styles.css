@@ -36,24 +36,25 @@ nav a:hover {
     color: #333;
 }
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 20px auto;
+    gap: 20px;
 }
 .main-content {
-    float: left;
-    width: 70%;
-    padding: 0 20px;
-    box-sizing: border-box;
+    flex: 3;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 .sidebar {
-    float: right;
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: #e2e2e2;
-    margin-top: 20px;
+    flex: 1;
+    padding: 20px;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 section {
     margin-bottom: 20px;
@@ -89,4 +90,18 @@ footer {
     font-weight: bold;
     position: absolute;
     left: 0;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch;
+    }
+
+    .sidebar {
+        order: 1; /* Sidebar moves to the top */
+    }
+
+    .main-content {
+        order: 2; /* Main content moves below the sidebar */
+    }
 }
