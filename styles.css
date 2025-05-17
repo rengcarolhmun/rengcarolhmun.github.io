@@ -46,14 +46,6 @@ nav a:hover {
     padding: 0 20px;
     box-sizing: border-box;
 }
-.sidebar {
-    float: right;
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: #e2e2e2;
-    margin-top: 20px;
-}
 section {
     margin-bottom: 20px;
     padding: 15px;
