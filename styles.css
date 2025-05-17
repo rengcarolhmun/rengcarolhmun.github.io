@@ -1,189 +1,83 @@
-/* Import Google Font: Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* CSS Reset */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Apply smooth font rendering */
-html {
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
-  line-height: 1.5;
-  color: #333;
-  background-color: #f4f4f4;  /* Use the background color from your body */
-}
-
-/* Merged body styles (removed duplicate) */
 body {
-  min-height: 100vh;
-  background-color: #f4f4f4;
-  color: #333;
-  font-weight: 400;
-  font-family: 'Roboto', Arial, sans-serif; /* ensure font applies here */
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
-  margin: 0;
-  padding: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
-
-/* Remove list styles */
-ul, ol {
-  list-style: none;
-}
-
-/* Reset anchor tags */
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  transition: color 0.3s ease; /* smooth hover */
-}
-
-/* Reset buttons */
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-}
-
-/* Images */
-img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  border-style: none;
-}
-
-/* Tables */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  color: #222;
-}
-
-/* Inputs */
-input, textarea, select {
-  font-family: inherit;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: inherit;
-  background-color: transparent;
-  border: 1px solid #ccc;
-  padding: 0.5em;
-  border-radius: 4px;
-  transition: border-color 0.3s ease;
-}
-
-input:focus, textarea:focus, select:focus {
-  outline: none;
-  border-color: #007BFF; /* or your primary color */
-  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
-}
-
-/* Header */
 header {
-  background: linear-gradient(to right, #000000, #333333);
-  color: #fff;  /* Ensure header text is light on dark bg */
-  padding-top: 10px;
-  min-height: 70px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #000000, #333333);
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
 header h1 {
-  text-align: center;
-  margin: 0;
-  padding-bottom: 10px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
 }
-
-/* Navigation */
 nav {
-  background: linear-gradient(to right, #0056b3, #1b8ff5);
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #0056b3, #1b8ff5);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 nav a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 0 15px;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 15px;
+    letter-spacing: 1px;
 }
-
 nav a:hover {
-  color: #333;
+    color: #333;
 }
-
-/* Containers and sections left unchanged */
 .container {
-  width: 95%;
-  padding: 20px 0;
-  margin: 0 auto;
+    width: 95%;
+    padding: 20px 0;
+    margin: 0 auto;
 }
-
 .main-content {
-  width: 90%;
-  padding: 0 5px;
-  box-sizing: border-box;
-  margin: 0 auto;
+    width: 90%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
-
 section {
-  margin-bottom: 20px;
-  padding: 15px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 h2 {
-  color: #0779e4;
-  border-bottom: #e2e2e2 2px solid;
-  padding-bottom: 5px;
+    color: #0779e4;
+    border-bottom: #e2e2e2 2px solid;
+    padding-bottom: 5px;
 }
-
 footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
-  color: #fff;
-  background: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background: #333;
 }
-
 .certificate-list {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
-
 .certificate-list li {
-  margin-bottom: 5px;
-  padding-left: 20px;
-  position: relative;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
 }
-
 .certificate-list li:before {
-  content: "\2022"; /* Bullet point */
-  color: #0779e4;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
+    content: "\2022"; /* Bullet point */
+    color: #0779e4;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
 }
